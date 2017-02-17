@@ -5,6 +5,7 @@ class FlexTimeWidget extends Component {
     super(props);
     this.container = null;
     this.state = Object.assign({
+      flexHours: 10,
       isLoaded: false,
       min: -20,
       max: 80,
@@ -75,6 +76,9 @@ class FlexTimeWidget extends Component {
   render() {
     return (
       <div className="flex-time-widget">
+        <div className="flex-hours-text">
+          {this.state.flexHours} hours
+        </div>
         <div className = "bubble-level-container" ref = {this.onContainerLoad } style = {this.getContainerStyle()}>
           <div className = "min-marker"> <p className="marker-text"> {this.state.min} </p></div>
           <div className = "lower-marker" style = {this.getWidthStyle(this.state.lowerPct)}> </div> 
@@ -90,26 +94,3 @@ class FlexTimeWidget extends Component {
 };
 
 export default FlexTimeWidget;
-
-// class LevelTester extends React.Component {
-//   constructor(props){
-//   super(props)
-//     this.state = {
-//     flex:0
-//     }
-//     this.changeFlex = this.changeFlex.bind(this)
-//     }
-  
-//   changeFlex(event) {
-//     console.log('Changed')
-//     this.setState({flex:event.target.value})
-//   }
-
-//   render() {
-//     return <div> 
-//     <label>Flex Time:</label>
-//     <input type="text" value={this.state.flex} onChange={this.changeFlex}/>
-//     <LevelGauge min="-20" max="80" current={parseFloat(this.state.flex)} />
-//     </div>
-//   }
-// }

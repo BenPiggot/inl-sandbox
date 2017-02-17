@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Calendar from './Calendar';
 
-class BilledHoursText extends Component {
+class HoursText extends Component {
   constructor(props) {
     super(props);
 
@@ -20,14 +20,15 @@ class BilledHoursText extends Component {
 
   render() {
     return (
-      <div className="footer-text" 
+      <div className="hours-text" 
           onMouseEnter={this.handleMouseEnter.bind(this)}
           onMouseLeave={this.handleMouseLeave.bind(this)}>
-        Billed Hours: 16
+        <div className="hours-number">16</div>
+        <div className="time-description-text">Billed Hours</div>
         { this.state.showCalendar ? <Calendar xPos={this.props.xPos} /> : null }
       </div>
     )
   }
 }
 
-export default BilledHoursText; 
+export default HoursText; 

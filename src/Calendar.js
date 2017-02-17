@@ -14,7 +14,6 @@ class Calendar extends Component {
   }
 
   onDatesChange({startDate, endDate}) {
-    debugger
     this.setState({ startDate, endDate });
   }
 
