@@ -23,8 +23,8 @@ class HoursText extends Component {
       <div className="hours-text" 
           onMouseEnter={this.handleMouseEnter.bind(this)}
           onMouseLeave={this.handleMouseLeave.bind(this)}>
-        <div className="hours-number">16</div>
-        <div className="time-description-text">Billed Hours</div>
+        <div className="hours-number">{this.props.hours}</div>
+        <div className="time-description-text">{this.props.text}</div>
         { this.state.showCalendar ? <Calendar xPos={this.props.xPos} /> : null }
       </div>
     )

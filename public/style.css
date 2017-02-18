@@ -1,5 +1,28 @@
 body {
   font-family: helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sidebar-controls {
+  width: 5%;
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  padding: 5px 0;
+  background: #444;
+}
+
+.sidebar-icon {
+  color: #ccc;
+  text-align: center;
+  padding: 8px 2px;
+}
+
+.header {
+  margin-left: 5%;
+  padding: 5px;
 }
 
 .header-control {
@@ -90,14 +113,14 @@ label:before {
 
 .header-select-preface {
   position: relative;
-  left: -50px;
+  left: -52px;
   top: 5px;
   font-size: 12px;
 }
 
 .header-select {
   text-align: left;
-  width: 77%;
+  width: 81%;
   font-size: 16px;
   font-weight: bold;
   padding:4px;
@@ -116,12 +139,12 @@ label:before {
 }
 
 .footer {
-  border-top: 1px solid #222;
-  height: 100px;
-  width: 100%;
+  border-top: 2px solid #ccc;
+  height: 70px;
+  width: 95%;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 5%;
   display: flex;
 }
 
@@ -145,7 +168,7 @@ label:before {
   font-size: 16px;
   color: #777;
   margin-left: 8px;
-  width: 20%;
+  width: 50%;
 }
 
 .calendar {
@@ -187,7 +210,7 @@ label:before {
 
 .flex-time-widget {
   width: 20%;
-  height: 50%;
+  height: 33%;
   position: relative;
   top: 15%;
 }
@@ -208,13 +231,14 @@ label:before {
 .min-marker {
   display:flex;
   flex: 13;
-  background-color: #f3f5f6;
+  background-color: #ddd;
   justify-content:center;
   align-items:center;
 }
 
 .marker-text{
   margin:0 0 0 0;
+  font-size: 13px;
 }
 
 .lower-marker {
@@ -233,7 +257,7 @@ label:before {
 .max-marker {
   display:flex;
   flex: 13;
-  background-color: #f3f5f6;
+  background-color: #ddd;
   justify-content:center;
   align-items:center;
 }
