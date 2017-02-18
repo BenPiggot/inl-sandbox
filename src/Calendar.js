@@ -19,7 +19,7 @@ class Calendar extends Component {
 
   render() {
     return (
-      <div style={{left: this.props.xPos }} className="calendar">
+      <div style={{left: this.props.xPos, top: this.props.yPos }} className="calendar">
         <DateRangePicker
           startDate={this.state.startDate}
           endDate={this.state.endDate}
