@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import HoursText from './HoursText';
-import FlexTimeWidget from './FlexTimeWidget';
+import HoursText from '../components/HoursText';
+import FlexTimeWidget from '../components/FlexTimeWidget';
 
 class Footer extends Component {
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Footer from './Footer';
-import Header from './Header';
-import SidebarControls from './SidebarControls';
+import Footer from './containers/Footer';
+import Header from './containers/Header';
+import SidebarControls from './containers/SidebarControls';
 
 class App extends Component {
   render() {
