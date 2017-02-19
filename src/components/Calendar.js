@@ -21,6 +21,7 @@ class Calendar extends Component {
     return (
       <div style={{left: this.props.xPos, top: this.props.yPos }} className="calendar">
         <DateRangePicker
+          style={{marginLeft: -100}}
           startDate={this.state.startDate}
           endDate={this.state.endDate}
           focusedInput={this.state.focusedInput}

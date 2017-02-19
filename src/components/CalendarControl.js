@@ -39,7 +39,7 @@ class CalendarControl extends Component {
         <button className="header-control-right" onClick={this.goForward.bind(this)}>
           <i className="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
         </button>
-        { this.state.showCalendar ? <Calendar xPos={0} yPos={70}/> : null }
+        { this.state.showCalendar ? <Calendar xPos={60} yPos={70}/> : null }
       </div>
     )
   }

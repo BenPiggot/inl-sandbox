@@ -173,10 +173,10 @@ label:before {
 
 .calendar {
   padding: 10px;
-  width: 300px;
-  height: 200px;
+  width: 650px;
+  height: 400px;
   bottom: 90px;
-  left: 10px;
+  left: 100px;
   z-index: 10;
   background: white;
   border: 1px solid #bbb;
@@ -206,6 +206,14 @@ label:before {
   border-width: 16px;
   border-color: transparent transparent #bbb transparent;
   border-style: solid;
+}
+
+.DateRangePicker__picker {
+  background-color: transparent;
+}
+
+.DayPicker--horizontal {
+  left: -150px;
 }
 
 .flex-time-widget {
