@@ -1,46 +1,48 @@
 <App>
-  <TimesheetLanding />
+  <TimesheetContainer />
   <Approvals />
   <ReportingStats />
   <ChargeCode />
   <Settings? />
 </App>
 
-<TimesheetLanding>
-  <Header>
-    <CalendarControl />
-    <ScheduleControl />
-    <PrintControl />
-    <CloneControl />
-    <NewEntryControl />
-  </Header>
-  <SidebarControls />
-  <Timesheet>
-    <TimesheetHeaderRow />
-    <TimesheetRow>
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <TimesheetCell /> 
-      <BilleHoursText />
-      <TotalYearsText />
-      <Icon />
-      <Icon />
-      <Icon />
-    </TimesheetRow>
-  </Timesheet>
-  <CommentRow />
-  <Footer>
-    <BilledHoursText />
-    <VacationBalanceText />
-    <TotalHoursText />
-    <FlexTimeWidget />
-    <StatusText />
-  </Footer>
-</TimesheetLanding>
+<TimesheetContainer>
+  <TimesheetPage>
+    <Header>
+      <CalendarControl />
+      <ScheduleControl />
+      <PrintControl />
+      <CloneControl />
+      <NewEntryControl />
+    </Header>
+    <SidebarControls />
+    <Timesheet>
+      <TimesheetHeaderRow />
+      <TimesheetRow>
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetCell /> 
+        <TimesheetText />
+        <TimesheetText />
+        <Icon />
+        <Icon />
+        <Icon />
+      </TimesheetRow>
+    </Timesheet>
+    <CommentRow />
+    <Footer>
+      <BilledHoursText />
+      <VacationBalanceText />
+      <TotalHoursText />
+      <FlexTimeWidget />
+      <StatusText />
+    </Footer>
+  </TimesheetPage>
+</TimesheetContainer>
 
 <Calendar />
 <Employees />

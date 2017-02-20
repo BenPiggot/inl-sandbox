@@ -19,6 +19,10 @@ class SidebarControls extends Component {
         <div className="sidebar-icon">
           <i className="fa fa-cog fa-2x"></i>
         </div>
+        <div className="sidebar-icon-user">
+          <div className="sidebar-user-alerts">2</div>
+          <i className="fa fa-user fa-2x"></i>
+        </div>
       </div>
     )
   }
